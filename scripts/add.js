@@ -37,7 +37,7 @@ if (!dirFound && !chapterName) {
   return 0;
 } else if (!dirFound) {
   const name = getDashName(chapterName);
-  dirFound = `${baseDir}${chapterNumber}-${name}`;
+  dirFound = `chap-${chapterNumber}-${name}`;
   mkdirSync(dirFound);
 }
 

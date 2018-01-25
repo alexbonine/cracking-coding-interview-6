@@ -22,7 +22,7 @@ const runTests = (func, tests = []) => {
       allPass = false;
     }
 
-    const actual = func(...args);
+    const actual = func(...args, expected);
     if (JSON.stringify(actual) !== JSON.stringify(expected)) {
       failures++;
       allPass = false;
